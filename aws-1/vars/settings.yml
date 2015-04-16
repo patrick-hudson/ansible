@@ -1,0 +1,3 @@
+vars:
+    dbroot: "{{ lookup('password', '/tmp/' + '.mysqlpass length=15') }}"
+    pmapass: "{{ lookup('password', '/tmp/' + '.pmapass length=15') }}"
